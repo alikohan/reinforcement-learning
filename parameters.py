@@ -1,0 +1,38 @@
+
+# ------------------ environment ------------------
+number_of_rows = 7
+table_size = 40
+table_color = '#8abbd4'
+table_outside_color = '#aeb0af'
+movement_speed = 5
+interval_between_each_step_in_run_best_policy = 0.2 # in seconds
+should_display_state_labels = True
+
+obstacles_index = [[2, 4], [2, 6], [3, 2], [3, 3], [3, 4], [3, 5], [3, 6], [5, 3], [5, 4], [5, 5], [5, 6], [5, 7]]
+initial_tiles_index = [[7, 7]]
+initial_holes_index = [[7, 6]]
+initial_agents_index = [[2, 3]]
+
+
+label_position_width = -360
+label_position_height = -250
+button_position_width = -360
+button_position_height = -200
+
+# ------------------ RL ------------------
+gamma = 1
+noise = 0.3 # noise = 0 means environment is deterministic
+iteration = 20
+arrow_length = table_size - 5 # for display policy
+arrow_width = 2 # for display policy
+iteration_interval = 0.1 # interval between each iteration (in seconds)
+should_run_test = True
+
+rewards = [[-0.04, -0.04, -0.04, -0.04, -0.04, -0.04, -0.04], [-0.04, -0.04, -0.04, -0.04, -0.04, -0.04, -0.04], [-0.07, -0.04, -0.04, -0.04, -0.04, -0.04, -0.04],
+                   [-0.04, -0.04, -0.04, -0.04, -0.04, -0.04, -0.04], [-0.04, -0.04, -0.04, -0.04, -0.04, -0.04, -0.04], [-0.04, -0.04, -0.04, -0.04, -0.04, -0.04, -0.04], [-0.04, -0.04, -0.04, -0.04, -0.04, -10, 10]]
+# rewards = [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0],
+#                    [0, 0, 0, 0, 0], [0, 0, 0, -1, 1]]
+
+initial_value_functions = [[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0],
+                   [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, -1, 1]]
+
